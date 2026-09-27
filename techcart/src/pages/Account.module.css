@@ -1,0 +1,14 @@
+.layout { display: grid; grid-template-columns: 220px 1fr; gap: 28px; padding: 28px 0 60px; }
+.nav { display: flex; flex-direction: column; gap: 4px; }
+.nav button {
+  text-align: left; padding: 10px 14px; border-radius: 8px; border: none; background: none;
+  font-size: 0.9rem; color: var(--text); font-weight: 500;
+}
+.nav button.active { background: var(--navy); color: #fff; }
+.panel { padding: 24px; }
+.addressCard { border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 12px; position: relative; }
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
+@media (max-width: 800px) {
+  .layout { grid-template-columns: 1fr; }
+  .formGrid { grid-template-columns: 1fr; }
+}

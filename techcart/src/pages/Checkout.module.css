@@ -1,0 +1,33 @@
+.steps { display: flex; justify-content: center; gap: 8px; margin-bottom: 32px; }
+.step {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.82rem; color: var(--text-muted); padding: 0 14px;
+}
+.step .num {
+  width: 26px; height: 26px; border-radius: 50%; background: var(--border);
+  display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.78rem; color: #fff;
+}
+.step.active .num, .step.done .num { background: var(--blue); }
+.step.active { color: var(--navy); font-weight: 600; }
+
+.layout { display: grid; grid-template-columns: 1fr 340px; gap: 28px; align-items: start; }
+.panel { padding: 26px; }
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
+.summaryLine { display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 10px; }
+.summaryTotal { font-weight: 700; font-size: 1.05rem; border-top: 1px solid var(--border); padding-top: 12px; }
+
+.paymentOption {
+  display: flex; align-items: center; gap: 12px;
+  border: 1.5px solid var(--border); border-radius: 10px;
+  padding: 14px 16px; margin-bottom: 12px; cursor: pointer;
+}
+.paymentOption.selected { border-color: var(--blue); background: #eff6ff; }
+
+.miniItem { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; font-size: 0.85rem; }
+.miniItem img { width: 40px; height: 40px; object-fit: cover; border-radius: 6px; }
+
+@media (max-width: 800px) {
+  .layout { grid-template-columns: 1fr; }
+  .formGrid { grid-template-columns: 1fr; }
+  .steps { flex-wrap: wrap; }
+}

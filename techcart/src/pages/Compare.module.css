@@ -1,0 +1,8 @@
+.wrap { overflow-x: auto; padding-bottom: 20px; }
+.table { border-collapse: collapse; width: 100%; min-width: 700px; }
+.table th, .table td { padding: 14px 16px; border-bottom: 1px solid var(--border); vertical-align: top; text-align: left; }
+.table th { width: 160px; color: var(--text-muted); font-size: 0.85rem; font-weight: 600; background: var(--bg); }
+.productCol { width: 220px; }
+.productImg { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; margin-bottom: 10px; }
+.diffCell { background: #fffbeb; font-weight: 600; }
+.removeBtn { font-size: 0.78rem; color: var(--danger); background: none; border: none; margin-top: 8px; }
